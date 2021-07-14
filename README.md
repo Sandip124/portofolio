@@ -1,5 +1,5 @@
-# portofolio
-Minimal Personal portfolio website v2
+# Portfolio
+Minimal Personal portfolio
 
 ![Design File](design/portfolio.jpg "Portfolio")
 
