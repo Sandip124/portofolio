@@ -6,6 +6,8 @@ body {
     font-family: "solway";
     box-sizing: border-box;
     overflow-x: hidden;
+    background-image: url(../images/DotGrid.png);
+    background-repeat: repeat;
 }
 
 .row {
@@ -40,7 +42,7 @@ body {
 /* Header Section */
 
 .header {
-    background-image: url("/images/HeaderBackground.svg");
+    background-image: url("../images/HeaderBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -148,7 +150,7 @@ body {
 .design__container {
     width: 100%;
     max-width: 916px;
-    margin: 0px auto;
+    margin: 8em auto;
 }
 
 .design__subtitle {
@@ -167,7 +169,7 @@ body {
     flex-shrink: 1;
     flex-flow: wrap;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin: 5em 0;
 }
 .grid-item > a > img {
     width: 100%;
@@ -204,6 +206,7 @@ body {
     flex-direction: row;
     margin-bottom: 32px;
     background-color: #e5e5e5;
+    border: 2px solid #7235d6;
     border-radius: 10px;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -212,9 +215,7 @@ body {
 .project__thumbnail {
     background-color: #7235d6;
     display: inline-block;
-    border-radius: 10px;
-    width: 154px;
-    height: 109px;
+    width: 150px;
     text-align: center;
     position: relative;
 }
@@ -227,6 +228,8 @@ body {
 
 .project__content {
     color: #7235d6;
+    flex: 1;
+    margin-left: 20px;
 }
 
 .project__title,
@@ -252,7 +255,13 @@ body {
     margin-top: 200px;
     padding: 5em 0;
     text-align: center;
-    background-color: rgba(81, 23, 174, 0.88);
+    background-image: url("../images//FooterBackground.jpg"),
+        linear-gradient(rgba(81, 23, 174, 0.88), rgb(27, 8, 65, 5));
+    /* background-color: rgba(81, 23, 174, 0.88); */
+    background-blend-mode: overlay;
+
+    background-size: cover;
+    background-position: center;
     font-family: pacifico;
     font-weight: 300;
     font-style: normal;
