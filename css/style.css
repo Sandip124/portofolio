@@ -256,8 +256,7 @@ body {
     padding: 5em 0;
     text-align: center;
     background-image: url("../images//FooterBackground.jpg"),
-        linear-gradient(rgba(81, 23, 174, 0.88), rgb(27, 8, 65, 5));
-    /* background-color: rgba(81, 23, 174, 0.88); */
+        linear-gradient(rgba(81, 23, 174, 0.88), rgba(81, 23, 174, 0.9));
     background-blend-mode: overlay;
 
     background-size: cover;
