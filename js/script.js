@@ -102,3 +102,9 @@ var app = new Vue({
         ]
     }
 })
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    let loader = document.getElementById('loader');
+    loader.style.display = "none";
+});
