@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        profile_image: './images/profile.jpg',
+        profile_image: 'https://github.com/Sandip124/portofolio/blob/main/images/profile.jpg?q=60',
         name: 'Sandip Chaudhary',
         profile_content: `I am Web Developer & Graphic Designer From Jhapa. I am a fan of technology, design, and web
                         development.`,
