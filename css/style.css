@@ -42,7 +42,7 @@ body {
 /* Header Section */
 
 .header {
-    background-image: url("../images/HeaderBackground.svg");
+    background-image: url("../images/cover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
