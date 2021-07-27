@@ -19,16 +19,6 @@ body {
 
 /* Common Styles */
 
-.about__subtitle,
-.projects__subtitle,
-.design__subtitle {
-    font-size: 18px;
-    font-family: Pacifico;
-    font-weight: normal;
-    color: #360348;
-    margin-bottom: 0px;
-}
-
 .about__title,
 .projects__title,
 .design__title {
@@ -58,20 +48,11 @@ body {
 }
 
 .header__image {
-    width: 120px;
-    height: 120px;
-    border-radius: 25px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    border: solid 1px #000000;
-}
-
-.header__sub_title {
-    height: 31px;
-    flex-grow: 0;
-    font-size: 18px;
-    font-family: Pacifico;
-    font-weight: normal;
-    color: #ffffff;
+    border: solid 3px #ffffff;
 }
 
 .header__title {
@@ -79,6 +60,17 @@ body {
     font-size: 48px;
     font-weight: normal;
     color: #ffffff;
+}
+
+.header__title:before {
+    display: block;
+    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "Hi there, I am";
+    font-family: "Pacifico";
+    font-size: 18px;
 }
 
 .header__description {
@@ -111,6 +103,17 @@ body {
     margin-top: 160px;
 }
 
+.about__title:before {
+    display: block;
+    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "This is something";
+    font-family: "Pacifico";
+    font-size: 18px;
+}
+
 .about__container {
     width: 100%;
     max-width: 916px;
@@ -130,12 +133,11 @@ body {
     text-align: left;
     color: #360348;
     text-align: justify;
-    padding-right: 16px;
+    padding-right: 32px;
 }
 
 .about__cover {
-    padding-top: 32px;
-    padding-left: 16px;
+    border-radius: 8px;
 }
 
 /* Design Section */
@@ -143,7 +145,7 @@ body {
 .design {
     width: 100%;
     background-color: #7235d6;
-    margin-top: 160px;
+    margin-top: 80px;
     margin-bottom: 50px;
     position: relative;
 }
@@ -160,12 +162,16 @@ body {
     margin: 8em auto;
 }
 
-.design__subtitle {
-    color: #fff;
-}
-
 .design__title {
     color: white;
+}
+
+.design__title:before {
+    display: block;
+    color: #fff;
+    content: "Hope you like some";
+    font-family: "Pacifico";
+    font-size: 18px;
 }
 
 .design__content {
@@ -247,6 +253,17 @@ body {
     flex-direction: row;
 }
 
+.projects__title:before {
+    display: block;
+    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "These are my some";
+    font-family: "Pacifico";
+    font-size: 18px;
+}
+
 .project__link {
     display: flex;
     flex-direction: row;
@@ -262,12 +279,10 @@ body {
     margin-top: 200px;
     padding: 2em 0;
     text-align: center;
-    background-color: #360348;
-    /* border-top: 2px solid #7235d6; */
-    font-family: pacifico;
-    font-weight: 300;
+    background-color: #e3e3e4;
+    font-family: "solway";
     font-style: normal;
-    color: #e5e5e5;
+    color: #7235d6;
 }
 
 .footer__container {
@@ -275,6 +290,10 @@ body {
     max-width: 516px;
     margin: 0px auto;
     text-align: center;
+}
+
+.heart {
+    color: #e85600;
 }
 
 .gradient_text {

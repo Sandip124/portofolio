@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         profile_image: './images/profile.jpg',
         name: 'Sandip Chaudhary',
-        profile_content: `I am Web Developer & Graphic Designer From Jhapa. I am a fan of technology, design, and web
+        profile_content: `I am Web Developer & Graphic Designer from Jhapa. I am a fan of technology, design, and web
                         development.`,
         social_links: [
             {
