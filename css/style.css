@@ -38,13 +38,14 @@ body {
     width: 100%;
     height: 100vh;
     background-position: bottom;
+    place-content: center;
+    display: grid;
+    text-align: center;
 }
 
 .header__container {
     width: 100%;
     max-width: 450px;
-    margin: 25vh auto;
-    text-align: center;
 }
 
 .header__image {
@@ -364,5 +365,47 @@ body {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header__container {
+        width: 340px;
+    }
+
+    /* About Section */
+
+    .about {
+        width: 440px;
+        margin-top: 4em;
+        height: 800px;
+    }
+
+    .about__container {
+        margin: 10vw;
+    }
+    .about__columns {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    .about__column:nth-child(2) {
+        margin-top: 4em;
+    }
+
+    .about__cover {
+        width: 410px;
+    }
+
+    /* Design Section */
+
+    .design {
+        width: 440px;
+        margin-top: 4em;
+        height: 800px;
+    }
+
+    .design__container {
+        margin: 10vw;
     }
 }
