@@ -35,7 +35,9 @@ body {
     background-image: url("../images/cover.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    min-height: ;
     height: 100vh;
     background-position: bottom;
     place-content: center;
