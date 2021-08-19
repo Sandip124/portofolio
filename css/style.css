@@ -6,7 +6,7 @@ body {
     font-family: "solway";
     box-sizing: border-box;
     overflow-x: hidden;
-    background-image: url(../images/DotGrid.png);
+    background-image: url("../images/DotGrid.png");
     background-repeat: repeat;
 }
 
@@ -37,7 +37,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: ;
     height: 100vh;
     background-position: bottom;
     place-content: center;
@@ -102,8 +101,9 @@ body {
 .about {
     width: 100%;
     height: 50vh;
+    min-height: 200px;
     position: relative;
-    margin-top: 160px;
+    margin: 160px 0;
 }
 
 .about__title:before {
@@ -181,11 +181,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-shrink: 1;
     flex-flow: wrap;
-    align-items: flex-start;
+    align-items: center;
     margin: 5em 0;
+    align-content: space-between;
 }
 .grid-item > a > img {
     width: 100%;
@@ -371,20 +372,27 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    /* header section */
+    .header {
+        min-height: 768px;
+    }
+
     .header__container {
-        width: 340px;
+        width: 400px;
     }
 
     /* About Section */
 
     .about {
-        width: 440px;
-        margin-top: 4em;
-        height: 800px;
+        width: 88%;
+        min-width: 420px;
+        height: 100%;
+        min-height: 400px;
+        margin: 6em 0;
     }
 
     .about__container {
-        margin: 10vw;
+        margin: 0 10vw;
     }
     .about__columns {
         flex-direction: column;
@@ -396,7 +404,10 @@ body {
     }
 
     .about__cover {
-        width: 410px;
+        width: 93%;
+        min-width: 420px;
+        height: 100%;
+        min-height: 400px;
     }
 
     /* Design Section */
