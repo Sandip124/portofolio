@@ -110,3 +110,17 @@ window.addEventListener('load', (event) => {
     let loader = document.getElementById('loader');
     loader.style.display = "none";
 });
+
+
+let scrollLink = document.getElementsByClassName("scroll-link");
+
+window.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scroll({
+        top: this.window.visualViewport.height,
+        behavior: 'smooth'  // 👈 
+    });
+
+});
+
+
