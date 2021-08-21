@@ -365,6 +365,41 @@ body {
     }
 }
 
+.mouse {
+    max-width: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform, opacity;
+    opacity: 1;
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes scroll {
+    0%,
+    20% {
+        transform: translateY(0) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0;
+    }
+}
+
 @media only screen and (max-width: 786px) {
     #app {
         border: none;
@@ -376,21 +411,15 @@ body {
 
     .header__container {
         width: 100%;
-        max-width: 420px;
+        max-width: 377px;
     }
 
     /* About Section */
 
-    .about {
-        width: 100vw;
-        min-width: 420px;
-        height: 100%;
-        min-height: 400px;
-    }
-
+    .about,
     .about__cover {
         width: 100%;
-        min-width: 420px;
+        min-width: 377px;
         height: 100%;
         min-height: 400px;
     }
