@@ -112,12 +112,13 @@ window.addEventListener('load', (event) => {
 });
 
 
-let scrollLink = document.getElementsByClassName("scroll-link");
+let scrollLink = document.getElementById("scroll-link");
+let header = document.getElementById("header");
 
-window.addEventListener("click", function (e) {
+scrollLink.addEventListener("click", function (e) {
     e.preventDefault();
     window.scroll({
-        top: this.window.visualViewport.height,
+        top: header.offsetHeight,
         behavior: 'smooth'  // 👈 
     });
 
