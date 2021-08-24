@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Solway:wght@300;400;500;700;800&display=swap");
 
+:root {
+    --gradient: linear-gradient(355deg, #660bf8, #fd0061);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -68,7 +72,7 @@ body {
 
 .header__title:before {
     display: block;
-    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,7 +113,7 @@ body {
 
 .about__title:before {
     display: block;
-    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -185,12 +189,10 @@ body {
 }
 
 .design__content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
     justify-content: space-between;
-    flex-flow: wrap;
-    align-items: center;
-    align-content: space-between;
 }
 
 /* .grid-item {
@@ -245,16 +247,9 @@ body {
     margin-left: 20px;
 }
 
-/* .project__title,
-.project__description {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-} */
-
 .projects__title:before {
     display: block;
-    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -295,7 +290,7 @@ body {
 }
 
 .gradient_text {
-    background-image: linear-gradient(90deg, #660bf8, #fd0061);
+    background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -460,7 +455,11 @@ body {
         text-overflow: ellipsis;
     }
 
-    .preject__description {
+    .project__description {
         margin-top: 2px;
+    }
+
+    .design__content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
