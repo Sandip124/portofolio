@@ -3,6 +3,9 @@
 :root {
     --gradient: linear-gradient(355deg, #660bf8, #fd0061);
     --border-radius: 4px;
+    --primary-color: #180040;
+    --primary-light: #360348;
+    --purple: #660bf8;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
 }
 
 #app {
-    border: 5px solid #660bf8;
+    border: 5px solid var(--purple);
 }
 
 .row {
@@ -33,13 +36,13 @@ body {
     font-size: 36px;
     font-weight: normal;
     text-align: left;
-    color: #360348;
+    color: var(--primary-light);
     margin-top: 0px;
 }
 /* Header Section */
 
 .header {
-    background-image: url("../images/cover.svg");
+    background: var(--primary-color) url("../images/cover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -54,6 +57,7 @@ body {
 .header__container {
     width: 100%;
     max-width: 450px;
+    color: #fff;
 }
 
 .header__image {
@@ -88,7 +92,7 @@ body {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    color: #d661ff;
+    color: #e499ff;
 }
 
 .header__social_icons {
@@ -99,8 +103,8 @@ body {
     justify-content: space-between;
 }
 
-.header__social_icon {
-    padding: 1px;
+a.header__social_icon {
+    color: #fff;
 }
 
 /* About Section */
@@ -144,7 +148,7 @@ body {
     font-family: Solway;
     font-size: 16px;
     text-align: left;
-    color: #360348;
+    color: var(--primary-light);
     text-align: justify;
 }
 
@@ -157,7 +161,7 @@ body {
 
 .design {
     width: 100%;
-    background-color: #7235d6;
+    background-color: var(--purple);
     position: relative;
     padding: 30px;
 }
@@ -196,9 +200,9 @@ body {
     justify-content: space-between;
 }
 
-/* .grid-item {
-    border: 1px solid #e85600;
-} */
+.grid-item > a {
+    color: #fff;
+}
 
 .grid-item > a > img {
     width: 100%;
@@ -228,8 +232,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
-    background-color: #e5e5e5;
-    border: 2px solid #7235d6;
+    background-color: #f0f0f0;
+    border: 2px solid var(--purple);
     border-radius: 10px;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -238,12 +242,13 @@ body {
 .project__thumbnail {
     display: flex;
     flex-direction: row;
-    background-color: #7235d6;
+    background-color: var(--purple);
     padding: 30px;
+    color: #fff;
 }
 
 .project__content {
-    color: #7235d6;
+    color: #5a07df;
     flex: 1;
     margin-left: 20px;
 }
@@ -273,7 +278,7 @@ body {
     position: relative;
     padding: 2em 0;
     text-align: center;
-    background-color: #7235d6;
+    background-color: var(--primary-color);
     font-family: "solway";
     font-style: normal;
     color: #ffffff;
@@ -287,7 +292,7 @@ body {
 }
 
 .heart {
-    color: #e85600;
+    color: #ee8244;
 }
 
 .gradient_text {
@@ -320,7 +325,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: #7235d6;
+    background: var(--primary-color);
     animation: fade 4s ease-in forwards;
 }
 
