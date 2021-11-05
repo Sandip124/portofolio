@@ -66,12 +66,12 @@ var app = new Vue({
             },
             {
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/13226129/media/7f2fa979d4f21d9d78ac4c7c5abad273.jpg?compress=1',
-                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/13226129/media/7f2fa979d4f21d9d78ac4c7c5abad273.jpg?compress=1&resize=600x450',
+                image_source: '/images/works/chaudhary_design_studio.jpg',
                 alt_text: 'Chaudhary Design Studio Logo Redesign'
             },
             {
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/11897536/media/28db1e613a684ce1d24ecbf0b667c637.jpg?compress=1',
-                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/11897536/media/28db1e613a684ce1d24ecbf0b667c637.jpg?compress=1&resize=600x450',
+                image_source: '/images/works/aggestra.png',
                 alt_text: 'Aggrestra Logo design concept'
             },
             {
@@ -80,26 +80,24 @@ var app = new Vue({
                 alt_text: 'Admin Dashboard UI Concept'
             }
         ],
-        projects: [
-            {
-                project_icon: "./images/Github.svg",
-                project_title: 'Confirm X',
-                project_description: 'The next generation responsive confirm dialog which is suitable for all devices.',
-                url: ''
-            },
-            {
-                project_icon: "./images/Github.svg",
-                project_title: 'Notifyx',
-                project_description: ' The next generation notification library you would love to  use it.',
-                url: ''
-            },
-            {
-                project_icon: "./images/Github.svg",
-                project_title: 'Vector X',
-                project_description: 'The smart and powerful vector editing tool right in your web browser.',
-                url: ''
-            },
-        ],
+        projects: [],
+    },
+    mounted() {
+        fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=sandip124')
+            .then(res => res.json())
+            .then(res => {
+                for (const repo of res) {
+                    this.projects.push({
+                        project_icon: "./images/Github.svg",
+                        project_title: repo.repo,
+                        project_description: repo.description,
+                        url: repo.link,
+                        language: repo.language,
+                        stars: repo.stars,
+                        forks: repo.forks
+                    })
+                }
+            });
     }
 })
 
