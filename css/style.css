@@ -436,7 +436,10 @@ a.header__social_icon {
     }
 
     .project__link {
+        border-radius: 0;
         justify-content: space-around;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 }
 @media only screen and (max-width: 786px) {
