@@ -392,8 +392,8 @@ a.header__social_icon {
 }
 
 .scroll-link {
-    position: absolute;
-    bottom: 1rem;
+    position: relative;
+    bottom: -5rem;
     left: 50%;
     transform: translateX(-50%);
 }
