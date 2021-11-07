@@ -120,6 +120,7 @@ body {
     font-stretch: normal;
     font-style: normal;
     color: #e499ff;
+    padding: 0 10px;
 }
 
 .header__social_icons {
@@ -128,6 +129,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 a.header__social_icon {
@@ -235,7 +237,7 @@ a.header__social_icon {
 .project {
     display: flex;
     flex-direction: row;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     background-color: var(--light-gray);
     border: 2px solid var(--purple);
     border-radius: 10px;
@@ -257,6 +259,11 @@ a.header__social_icon {
     margin-left: 18px;
 }
 
+.project__title::first-letter {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .projects__title:before {
     content: "These are my some";
 }
@@ -265,6 +272,13 @@ a.header__social_icon {
     display: flex;
     flex-direction: row;
     padding: 18px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #e5e5e5;
+}
+
+.project__link:hover {
+    margin-left: 10px;
 }
 
 /* Footer Section */
@@ -395,7 +409,36 @@ a.header__social_icon {
         opacity: 0;
     }
 }
+@media only screen and (max-width: 412px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        background-color: var(--light-gray);
+        border: 2px solid var(--purple);
+        border-radius: 10px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
+    .project__title {
+        padding-left: 16px;
+        font-size: 1.2em;
+    }
+
+    .project__description {
+        margin-top: 2px;
+        padding-left: 16px;
+    }
+
+    .project__thumbnail {
+        justify-content: space-around;
+    }
+
+    .project__link {
+        justify-content: space-around;
+    }
+}
 @media only screen and (max-width: 786px) {
     /* header section */
     .header {
@@ -412,9 +455,7 @@ a.header__social_icon {
     .about,
     .about__cover {
         width: 100%;
-        /* min-width: 377px; */
         height: 100%;
-        min-height: 400px;
     }
 
     .about__column {
@@ -448,30 +489,6 @@ a.header__social_icon {
         text-overflow: ellipsis;
     }
 
-    .scroll-link {
-        bottom: -2rem;
-    }
-
-    .project__content {
-        margin: 0px;
-    }
-
-    .project__title {
-        padding-left: 16px;
-    }
-
-    .project__description {
-        margin-top: 2px;
-        padding-left: 16px;
-    }
-
-    .project__thumbnail {
-        padding: 8px;
-    }
-
-    .project__link {
-        padding: 8px;
-    }
     .design__content {
         grid-template-columns: repeat(1, 1fr);
     }

@@ -9,47 +9,34 @@ var app = new Vue({
             {
                 url: 'https://github.com/sandip124',
                 image_link: './images/Github.svg',
-                alt_text: 'Github'
+                alt: 'Github'
             },
             {
                 url: 'https://dribbble.com/Sndp124',
                 image_link: './images/Dribbble.svg',
-                alt_text: 'Dribbble'
+                alt: 'Dribbble'
             },
             {
                 url: 'https://twitter.com/chaudhary_sndp',
                 image_link: './images/Twitter.svg',
-                alt_text: 'Twitter'
+                alt: 'Twitter'
             },
             {
                 url: 'https://www.behance.net/sandip124',
                 image_link: './images/Behance.svg',
-                alt_text: 'Behance'
+                alt: 'Behance'
             },
             {
                 url: 'https://www.linkedin.com/in/sandip-chaudhary-534913164/',
                 image_link: './images/Linkden.svg',
-                alt_text: 'Linkden'
+                alt: 'Linkden'
             },
         ],
-        about_me: ` Sandip Started Programming in 2017.He spends most of his time writing HTML,Css and
-                                Javascript.He
-                                is currently having
-                                degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
+        about_me: ` Sandip Started Programming in 2017.He spends most of his time writing HTML,Css and Javascript. He is currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
                                 <br>
-                                He is currently working as Software Developer in Crystal Solution In Birtamode since
-                                2018.He
-                                is
-                                very curious in
-                                learning
-                                new technologies and sharing them.
-
+                                He is currently working as Software Developer in Crystal Solution In Birtamode since 2018. He is very curious in learning new technologies and sharing them.
                                 <br>
-                                He enjoys doing design stuffs as well.He basically create UI of software and Application
-                                using
-                                the design tools like
-                                Adobe XD, Figma.
-
+                                He enjoys doing design stuffs as well.He basically create UI of software and Application using the design tools like Adobe XD, Figma.
                                 Beside Programming he loves cooking and travelling.`,
         about_image: './images/about.png',
         about_image_alt_text: "About me",
