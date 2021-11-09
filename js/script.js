@@ -12,7 +12,7 @@ var app = new Vue({
                 alt: 'Github'
             },
             {
-                url: 'https://dribbble.com/Sndp124',
+                url: 'https://dribbble.com/sandip124',
                 image_link: './images/Dribbble.svg',
                 alt: 'Dribbble'
             },
@@ -27,7 +27,7 @@ var app = new Vue({
                 alt: 'Behance'
             },
             {
-                url: 'https://www.linkedin.com/in/sandip-chaudhary-534913164/',
+                url: 'https://www.linkedin.com/in/sandip124/',
                 image_link: './images/Linkden.svg',
                 alt: 'Linkden'
             },
