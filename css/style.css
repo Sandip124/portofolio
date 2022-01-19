@@ -277,6 +277,10 @@ a.header__social_icon {
     background: #e5e5e5;
 }
 
+.project__link img{
+    width: 2em;
+}
+
 .project__link:hover {
     margin-left: 10px;
 }
