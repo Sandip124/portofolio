@@ -252,6 +252,7 @@ a.header__social_icon {
     background-color: var(--purple);
     padding: 30px;
     color: var(--white);
+    border-radius: 4px;
 }
 
 .project__content {
@@ -276,14 +277,21 @@ a.header__social_icon {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background: #e5e5e5;
+    transition: ease-in-out 0.3s;
 }
 
-.project__link img{
+.project__link img {
     width: 2em;
 }
 
 .project__link:hover {
-    margin-left: 10px;
+    background: #fff;
+    transition: ease-in-out 0.3s;
+    padding: 16px 36px;
+}
+
+.project__link:hover img {
+    width: 2.1em;
 }
 
 /* Footer Section */
