@@ -4,7 +4,7 @@ var app = new Vue({
         profile_image: './images/profile.jpg',
         name: 'Sandip Chaudhary',
         profile_content: `I am Dotnet Developer & UI Designer from Jhapa. I am a fan of technology, design, and web
-                        development. I love to do design stuffs. I also have primary focus on clean code `,
+                        development. I love to do design stuffs. I also have primary focus on clean code.`,
         social_links: [
             {
                 url: 'https://github.com/sandip124',
