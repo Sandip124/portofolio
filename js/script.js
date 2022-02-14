@@ -3,8 +3,8 @@ var app = new Vue({
     data: {
         profile_image: './images/profile.jpg',
         name: 'Sandip Chaudhary',
-        profile_content: `I am Web Developer & Graphic Designer from Jhapa. I am a fan of technology, design, and web
-                        development.`,
+        profile_content: `I am Dotnet Developer & UI Designer from Jhapa. I am a fan of technology, design, and web
+                        development. I love to do design stuffs. I also have primary focus on clean code `,
         social_links: [
             {
                 url: 'https://github.com/sandip124',
@@ -32,12 +32,12 @@ var app = new Vue({
                 alt: 'Linkden'
             },
         ],
-        about_me: ` Sandip Started Programming in 2017.He spends most of his time writing HTML,Css and Javascript. He is currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
+        about_me: ` I Started Programming in 2017.I spends most of his time writing Coding application related to  dotnet technologies and do some design stuffs . I  am currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
                                 <br>
-                                He is currently working as Software Developer in Crystal Solution In Birtamode since 2018. He is very curious in learning new technologies and sharing them.
+                                I am currently working as Software Developer in Crystal Solution In Birtamode since 2018. I am very curious in learning new technologies, clean code practices and sharing them.
                                 <br>
-                                He enjoys doing design stuffs as well.He basically create UI of software and Application using the design tools like Adobe XD, Figma.
-                                Beside Programming he loves cooking and travelling.`,
+                                I enjoys doing design stuffs, some you can checkout in my dribbble and Behance profile. I basically create web application, desktop application and also create  UI for software implementation using the design tools like Figma,Adobe XD.
+                                Beside Programming i loves cooking, travelling singing,dancing. `,
         about_image: './images/about.png',
         about_image_alt_text: "About me",
         design_projects: [
