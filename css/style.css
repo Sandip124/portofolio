@@ -220,6 +220,10 @@ a.header__social_icon {
 
 /* Project Section */
 
+.projects {
+    display: contents;
+}
+
 .projects__list {
     list-style-type: none;
     padding: 0;
