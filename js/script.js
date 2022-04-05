@@ -32,12 +32,12 @@ var app = new Vue({
                 alt: 'Linkden'
             },
         ],
-        about_me: ` I Started Programming in 2017.I spends most of his time writing Coding application related to  dotnet technologies and do some design stuffs . I  am currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
+        about_me: ` I Started Programming in 2017.I spends most of my time writing Coding application related to dotnet technologies and do some design stuffs . I  am currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
                                 <br>
-                                I am currently working as Software Developer in Crystal Solution In Birtamode since 2018. I am very curious in learning new technologies, clean code practices and sharing them.
+                                I am currently working as Software Developer in Crystal Solution in Birtamode since 2018. I am very curious in learning new technologies, clean code practices and sharing them.
                                 <br>
                                 I enjoys doing design stuffs, some you can checkout in my dribbble and Behance profile. I basically create web application, desktop application and also create  UI for software implementation using the design tools like Figma,Adobe XD.
-                                Beside Programming i loves cooking, travelling singing,dancing. `,
+                                Beside Programming i love cooking, travelling, singing, dancing. `,
         about_image: './images/about.png',
         about_image_alt_text: "About me",
         design_projects: [
