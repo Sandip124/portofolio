@@ -32,12 +32,12 @@ var app = new Vue({
                 alt: 'Linkden'
             },
         ],
-        about_me: ` I Started Programming in 2017.I spend most of his time writing Coding application related to  dotnet technologies and do some design stuffs . I  am currently having degree BCA (Bachelor of Computer Application) in Gomendra Multiple College Birtamode.
+        about_me: ` I  have Started Programming in 2017.I spend most of my time writing Coding application related to dotnet technologies and do some design stuffs . I  am currently having degree BCA (Bachelore of Computer Application) in Gomendra Multiple College Birtamode.
                                 <br>
-                                I am currently working as Software Developer in Pratham It System Pvt.ltd In Birtamode. I am very curious in learning new technologies, clean code practices and sharing them.
+                                I am currently working as Software Developer in Pratham It System Pvt.ltd in Birtamode. I am very curious in learning new technologies, clean code practices and sharing them.
                                 <br>
-                                I enjoys doing design stuffs, some you can check out in my dribbble and Behance profile. I basically create web application, desktop application and also create  UI for software implementation using the design tools like Figma,Adobe XD.
-                                Beside Programming i loves cooking, travelling singing,dancing. `,
+                                I enjoys doing design stuffs, some you can checkout in my dribbble and Behance profile. I basically create web application, desktop application and also create  UI for software implementation using the design tools like Figma,Adobe XD.
+                                Beside Programming i love cooking, travelling, singing, dancing. `,
         about_image: './images/about.png',
         about_image_alt_text: "About me",
         design_projects: [
@@ -89,11 +89,24 @@ var app = new Vue({
 })
 
 
-window.addEventListener('load', () => {
+window.addEventListener('load', (event) => {
     let loader = document.getElementById('loader');
     setTimeout(() => {
         loader.style.display = "none";
     }, 2000);
+});
+
+
+let scrollLink = document.getElementById("scroll-link");
+let header = document.getElementById("header");
+
+scrollLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scroll({
+        top: header.offsetHeight,
+        behavior: 'smooth'  // 👈 
+    });
+
 });
 
 
