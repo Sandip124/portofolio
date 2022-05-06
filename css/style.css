@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Solway:wght@300;400;500;700;800&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');*/
 
 :root {
     --gradient-angle: 355deg;
@@ -13,6 +14,7 @@
     --light-orange: #ee8244;
     --white: #fff;
     --light-gray: #f0f0f0;
+    --container-width : 1000px;
 }
 
 body {
@@ -55,7 +57,7 @@ body {
 .design__title:before {
     display: block;
     background-image: var(--gradient);
-    background-clip: text;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--font-secondary);
@@ -67,7 +69,7 @@ body {
 .projects__container,
 .footer__container {
     width: 90%;
-    max-width: 946px;
+    max-width: var(--container-width);
     margin: 2em auto;
 }
 
@@ -121,12 +123,12 @@ body {
 
 .header__description {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     color: #e499ff;
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 .header__social_icons {
@@ -147,6 +149,7 @@ a.header__social_icon {
 .about {
     width: 100%;
     position: relative;
+    padding: 8em 0;
 }
 
 .about__title:before {
@@ -160,6 +163,7 @@ a.header__social_icon {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
 }
 .about__column {
     width: 50%;
@@ -169,10 +173,11 @@ a.header__social_icon {
 .about__description {
     height: max-content;
     font-family: var(--font-primary);
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.2rem;
     color: var(--primary-light);
     text-align: justify;
+    line-height: 1.6rem;
+    text-indent: 2rem;
 }
 
 .about__cover {
@@ -184,7 +189,7 @@ a.header__social_icon {
 
 .design {
     width: 100%;
-    background-color: var(--purple);
+    background-color: #180040;
     position: relative;
 }
 
@@ -254,6 +259,7 @@ a.header__social_icon {
     color: #5a07df;
     flex: 1;
     margin: 0 1rem;
+    font-size:1.2em;
 }
 
 .project__title::first-letter {
@@ -280,7 +286,7 @@ a.header__social_icon {
 }
 
 .project__link:hover {
-    background: #fff;
+    background: #f6f6f6;
     transition: ease-in-out 0.3s;
     padding: 1em 2em;
 }
@@ -314,10 +320,10 @@ a.header__social_icon {
 
 .gradient_text {
     background-image: var(--gradient);
-    background-clip: text;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
+    -moz-background-clip: inherit;
     -moz-text-fill-color: transparent;
 }
 
@@ -325,8 +331,8 @@ a.header__social_icon {
 
 .loader {
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -369,8 +375,7 @@ a.header__social_icon {
         justify-content: space-around;
         width: 100%;
         padding: 2rem 0;
-        border-top-left-radius: var(--border-radius);
-        border-top-right-radius: var(--border-radius);
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
 
     .projects__title {
@@ -383,10 +388,8 @@ a.header__social_icon {
     }
 
     .project__link {
-        border-radius: 0;
         justify-content: space-around;
-        border-bottom-left-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
     }
 }
 @media only screen and (max-width: 786px) {
