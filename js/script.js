@@ -89,24 +89,11 @@ var app = new Vue({
 })
 
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
     let loader = document.getElementById('loader');
     setTimeout(() => {
         loader.style.display = "none";
     }, 2000);
-});
-
-
-let scrollLink = document.getElementById("scroll-link");
-let header = document.getElementById("header");
-
-scrollLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scroll({
-        top: header.offsetHeight,
-        behavior: 'smooth'  // 👈 
-    });
-
 });
 
 
