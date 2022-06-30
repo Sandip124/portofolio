@@ -38,7 +38,7 @@ var app = new Vue({
                                 <br>
                                 I enjoys doing design stuffs, some you can checkout in my dribbble and Behance profile. I basically create web application, desktop application and also create  UI for software implementation using the design tools like Figma,Adobe XD.
                                 Beside Programming i love cooking, travelling, singing, dancing. `,
-        about_image: './images/about.png',
+        about_image: './images/profile.jpg',
         about_image_alt_text: "About me",
         design_projects: [
             {
