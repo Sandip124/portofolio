@@ -65,6 +65,11 @@ var app = new Vue({
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/10886813/media/cdd6d97b9cf0e5ffbf4348fab0c1e41d.jpg?compress=1',
                 image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/10886813/media/cdd6d97b9cf0e5ffbf4348fab0c1e41d.jpg?compress=1&resize=800x600',
                 alt_text: 'Admin Dashboard UI Concept'
+            },
+              {
+                link: 'https://dribbble.com/shots/17331783-Messenger-Redesign',
+                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/17331783/media/1709480aeca6c72ab765a8f9c84ea6a9.jpg?compress=1&resize=800x600&vertical=top',
+                alt_text: 'Messenger Redesign'
             }
         ],
         projects: [],
