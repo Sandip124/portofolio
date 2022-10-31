@@ -42,9 +42,14 @@ var app = new Vue({
         about_image_alt_text: "About me",
         design_projects: [
             {
-                link: 'https://cdn.dribbble.com/users/2589332/screenshots/15376588/media/0f03cfd0b7b32562ca2205420dc5c6a9.jpg?compress=1',
-                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/15376588/media/0f03cfd0b7b32562ca2205420dc5c6a9.jpg?compress=1&resize=600x450',
-                alt_text: 'Arcdeo Landing Page'
+                link: 'https://github.com/Sandip124/BatteryNotifier',
+                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/19777923/media/66bff58fe27167448a00d4747568e6ff.jpg?compress=1&resize=600x450&vertical=top',
+                alt_text: 'Battery Notifier'
+            },
+            {
+                link: 'https://github.com/BirajMainali/csv-paster',
+                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/19715294/media/aadac3e5009f4ab322a117b73c59fb9a.jpg?compress=1&resize=600x450&vertical=top',
+                alt_text: 'CSV Paster'
             },
             {
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/14586244/media/3b1b4ae3b551f99284a6a8dcc2b84a40.jpg?compress=1',
@@ -60,11 +65,6 @@ var app = new Vue({
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/11897536/media/28db1e613a684ce1d24ecbf0b667c637.jpg?compress=1',
                 image_source: '/images/works/aggestra.png',
                 alt_text: 'Aggrestra Logo design concept'
-            },
-            {
-                link: 'https://cdn.dribbble.com/users/2589332/screenshots/10886813/media/cdd6d97b9cf0e5ffbf4348fab0c1e41d.jpg?compress=1',
-                image_source: 'https://cdn.dribbble.com/users/2589332/screenshots/10886813/media/cdd6d97b9cf0e5ffbf4348fab0c1e41d.jpg?compress=1&resize=800x600',
-                alt_text: 'Admin Dashboard UI Concept'
             },
               {
                 link: 'https://dribbble.com/shots/17331783-Messenger-Redesign',
