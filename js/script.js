@@ -57,6 +57,11 @@ var app = new Vue({
                 alt_text: 'Adbhut Gaming Sansar Logo'
             },
             {
+                link: 'https://dribbble.com/shots/21585020-Barcode-Buddy',
+                image_source: 'https://cdn.dribbble.com/userupload/7375858/file/original-1b21c4b7329beef605827ee42b780c1d.jpg?compress=1&resize=600x450',
+                alt_text: 'Barcode Buddy'
+            },
+            {
                 link: 'https://cdn.dribbble.com/users/2589332/screenshots/13226129/media/7f2fa979d4f21d9d78ac4c7c5abad273.jpg?compress=1',
                 image_source: '/images/works/chaudhary_design_studio.jpg',
                 alt_text: 'Chaudhary Design Studio Logo Redesign'
